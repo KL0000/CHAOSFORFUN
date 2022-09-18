@@ -37,6 +37,7 @@ int main()
 	int w = 0;
 	int temp = 0;
 	int randX = 3;
+	int j =0;
 
 
 	while (window.isOpen())
@@ -51,6 +52,7 @@ int main()
 		{
 			w = 3;
 			temp = 3;
+			j=1;
 			
 			
 		}
@@ -58,6 +60,7 @@ int main()
 		{
 			w = 4;
 			temp = 4;
+			j=1;
 			
 			
 			
@@ -66,9 +69,17 @@ int main()
 		{
 			w = 5;
 			temp = 5;
+			j = 1;
 			
 			
 			
+		}
+		if(j == 0)
+		{
+			window.clear();
+			text.setString("Click vertices for your chosen shape and a 4th vertex to get started");
+			window.draw(text);
+			j++;
 		}
 		//still iffy
 		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) {
