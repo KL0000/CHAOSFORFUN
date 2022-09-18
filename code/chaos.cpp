@@ -74,7 +74,7 @@ int main()
 			
 			
 		}
-		if(j == 0)
+		if(j == 1)
 		{
 			window.clear();
 			text.setString("Click vertices for your chosen shape and a 4th vertex to get started");
